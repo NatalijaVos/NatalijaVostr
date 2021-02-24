@@ -1,0 +1,131 @@
+
+
+body{
+	margin: 0;
+	line-height: 1.5;
+	background-color: #d9d1ca
+}
+
+body,
+input,
+textarea,
+button {
+	font-family: Bradley Hand;
+	font-weight: 200;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap:wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+/* Header */
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index:99;
+}
+.header .brand-name{
+
+	padding: 0 0px;
+}
+.header .brand-name a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 250;
+	letter-spacing: 4px;
+}
+.header .brand-name a:hover{
+	color: #83f2eb;
+}
+.header .nav{
+	
+	padding: 0 15px;
+}
+.header.nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+	
+}
+.header .nav ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600px;
+	color: #ffffff;
+	padding: 25px 0;
+	display: block; 
+	transition: all 0.5s ease; 
+}
+.header .nav ul li a:hover{
+	color:#83f2eb
+}
+
+/* home- section */
+.home-section {
+	min-height: 100vh;
+	background-image: url("natasa.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+.home-section: before{
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0.7;
+	z-index: -1;
+	
+}
+
+.home-section .row{
+	min-height: 100vh;
+}
+.home-section .home-content {
+
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.home-section .home-content h4{
+	font-size: 20px;
+	color: #black;
+	margin: 0;
+}
+.home-section .home-content h1{
+	font-size: 40px;
+	margin: 0;
+	color: #black;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 10px;
+	
+}
+
+

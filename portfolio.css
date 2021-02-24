@@ -1,0 +1,144 @@
+body{
+	margin: 0;
+	line-height: 1.5;
+	background-color: #d9d1ca
+}
+
+body,
+input,
+textarea,
+button {
+	font-family:  Bradley Hand;
+	font-weight: 200;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap:wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+/* Header */
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index:99;
+}
+.header .brand-name{
+
+	padding: 0 0px;
+}
+.header .brand-name a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 250;
+	letter-spacing: 4px;
+}
+.header .brand-name a:hover{
+	color: #83f2eb;
+}
+.header .nav{
+	
+	padding: 0 15px;
+}
+.header.nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+	
+}
+.header .nav ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600px;
+	color: #ffffff;
+	padding: 25px 0;
+	display: block; 
+	transition: all 0.5s ease; 
+}
+.header .nav ul li a:hover{
+	color:#83f2eb
+}
+.portfolio-section{
+	padding: 80px 0 80px;
+}
+
+.portfolio-section .portfolio-item{
+	flex 0 0 40%;
+	max-width: 33%;
+	padding: 0 0px;
+	margin-bottom: 70px;
+}
+
+.portfolio-section .portfolio-item-inner img{
+	
+	width: 85%;
+	display: block;
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+.portfolio-section .portfolio-item-inner:hover img{
+
+	transform: scale(1);
+}
+
+.portfolio-section .portfolio-item-inner{
+	position:relative;
+	cursor: pointer;
+}
+
+.portfolio-section .portfolio-item-inner .overlay{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	align-items: flex-end;
+	transition: all 0.5s ease;
+	opacity:0;
+	background-color: transparent;
+}
+
+.portfolio-section .portfolio-item-inner:hover .overlay{
+	opacity:1;
+}
+.portfolio-section .portfolio-item-inner .overlay{
+	color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	transform: translateX(30px);
+	transition: all 0.5s ease;
+}
+
+.portfolio-section .portfolio-item-inner:hover .overlay h4{
+	transform: traslateX(0);
+}
+
+.copyright{
+	border-top:1px solid;
+	padding: 45px 550px;
+	text-align: center;
+	color: #555555;
+	font-size: 14px;
+}
